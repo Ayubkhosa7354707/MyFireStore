@@ -1,4 +1,4 @@
-package com.ayub.khosa.firestore
+package com.ayub.khosa.firestore.data
 
 data class User(
     val id: String = "",
