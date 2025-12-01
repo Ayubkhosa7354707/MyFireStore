@@ -14,6 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.ayub.khosa.firestore.data.User
+import com.ayub.khosa.firestore.viewmodel.FireStoreViewModel
 import kotlin.random.Random
 
 @Composable
@@ -26,7 +28,7 @@ fun MainScreen(
     var user = User(
         name = "test",
         email = "test@gmail.com",
-        age = 10 , id = "test"
+        age = 10, id = "test"
     )
 
     Column(
