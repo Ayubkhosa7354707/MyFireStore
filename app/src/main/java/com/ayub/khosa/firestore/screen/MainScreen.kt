@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.ayub.khosa.firestore.common.TitleText
 import com.ayub.khosa.firestore.data.User
 import com.ayub.khosa.firestore.viewmodel.FireStoreViewModel
 import kotlin.random.Random
@@ -30,6 +31,7 @@ fun MainScreen(
         email = "test@gmail.com",
         age = 10, id = "test"
     )
+    TitleText(Modifier.padding(top = 30.dp, start = 10.dp, end = 10.dp), " Firbase store Screen")
 
     Column(
         modifier = Modifier
