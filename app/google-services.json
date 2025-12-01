@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "5217928014",
+    "project_id": "myfirestore-ec6d2",
+    "storage_bucket": "myfirestore-ec6d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5217928014:android:2565582f5fc90cf9eb541f",
+        "android_client_info": {
+          "package_name": "com.ayub.khosa.firestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtOt95Ppdz6Sw-nhOSAklUpNE8AXpTaV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
