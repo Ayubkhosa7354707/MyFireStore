@@ -1,6 +1,7 @@
 package com.ayub.khosa.firestore
 
 
+import com.ayub.khosa.firestore.data.User
 import com.ayub.khosa.firestore.utils.PrintLogs
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.CoroutineScope

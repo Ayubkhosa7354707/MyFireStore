@@ -1,7 +1,9 @@
-package com.ayub.khosa.firestore
+package com.ayub.khosa.firestore.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.ayub.khosa.firestore.FirestoreClient
+import com.ayub.khosa.firestore.data.User
 import com.ayub.khosa.firestore.utils.PrintLogs
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -50,7 +52,7 @@ class FireStoreViewModel @Inject constructor(
                     PrintLogs.printD("FirestoreClient: get user name = ${result.name}")
                     PrintLogs.printD("FirestoreClient: get user email = ${result.email}")
                     PrintLogs.printD("FirestoreClient: get user age = ${result.age}")
-                        var user: User = User(result.id,result.name,result.email,result.age)
+                        var user: User = User(result.id, result.name, result.email, result.age)
 
 
                         _uiState.update { currentState ->

@@ -1,4 +1,4 @@
-package com.ayub.khosa.firestore
+package com.ayub.khosa.firestore.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,6 +14,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.ayub.khosa.firestore.common.TitleText
+import com.ayub.khosa.firestore.viewmodel.FireStoreViewModel
+import com.ayub.khosa.firestore.data.User
 import kotlin.random.Random
 
 @Composable
@@ -26,8 +29,9 @@ fun MainScreen(
     var user = User(
         name = "test",
         email = "test@gmail.com",
-        age = 10 , id = "test"
+        age = 10, id = "test"
     )
+    TitleText(Modifier.padding(top = 30.dp, start = 10.dp, end = 10.dp), " Firebase Cloud Firestore and Realtime Database with Jetpack Compose UI Screen")
 
     Column(
         modifier = Modifier
@@ -56,9 +60,9 @@ fun MainScreen(
 
 
             var user = User(
-                name = "new name "+randomIntUntil,
-                email = "test"+randomIntemail+"@gmail.com",
-                age = randomIntage , id = user.id
+                name = "new name " + randomIntUntil,
+                email = "test" + randomIntemail + "@gmail.com",
+                age = randomIntage, id = user.id
             )
             viewModelfirestore.updateUser(user)
 
